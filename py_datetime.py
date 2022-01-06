@@ -1,7 +1,7 @@
 from datetime import datetime
 from time import time
 
-dt = datetime.now()
+dt = datetime.now()  # returns the current timestamp
 print(dt)
 print(dt.strftime("%Y/%m/%d"))  # strftime conversts date to string format
 print(datetime.strptime("2018-12-01", "%Y-%m-%d"))  # strptime converts string to date format
