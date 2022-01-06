@@ -9,3 +9,4 @@ print(dt)
 print(dt.strftime("%Y/%m/%d"))  # strftime conversts date to string format
 print(datetime.strptime("2018-12-01", "%Y-%m-%d"))  # strptime converts string to date format
 print(datetime(2015, 12, 21, 10, 39, 57))
+print(f"{dt.year}/{dt.month}")
