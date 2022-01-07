@@ -7,15 +7,17 @@ my_email = "test1234_ee@email.co.in"
 x = re.findall("[Ii]n", my_string)
 print(x)
 
-y = re.search("\s", my_string)
-print(f"start position: {y.start()}, End position: {y.end()}, Group: {y.group()}, Span is: {y.span()}")
+y = re.search(r"\s", my_string)
+print(f"start position: {y.start()}, End position: {y.end()}, Group: {y.group()}, Span is: {y.span()}, "
+      f"String: {y.string}")
 
-z = re.finditer("\s", my_string)
+z = re.finditer("er", my_string)
 for item in z:
-    print(f"start position: {item.start()}, End position: {item.end()}, Group: {item.group()}, Span is: {item.span()}")
+    print(f"start position: {item.start()}, End position: {item.end()}, Group: {item.group()}, Span is: {item.span()},"
+          f" String: {item.string}")
 
-a = re.split("\s", my_string, maxsplit=2)
+a = re.split(r"\s", my_string, maxsplit=2)
 print(a)
 
-b = re.sub("\s", "--", my_string)
+b = re.sub(r"\s", "--", my_string)
 print(b)
