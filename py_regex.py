@@ -14,5 +14,8 @@ z = re.finditer("\s", my_string)
 for item in z:
     print(f"start position: {item.start()}, End position: {item.end()}, Group: {item.group()}, Span is: {item.span()}")
 
-a = re.split("\s", my_string)
+a = re.split("\s", my_string, maxsplit=2)
 print(a)
+
+b = re.sub("\s", "--", my_string)
+print(b)
