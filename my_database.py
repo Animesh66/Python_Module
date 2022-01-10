@@ -1,7 +1,7 @@
 from mysql.connector import connect
 import os
 
-db_password = os.getenv("DB_PWD")
+db_password = os.getenv("DB_PASSWORD")
 mydb = connect(host="127.0.0.1", user="root", password=db_password, database="sql_store")
 
 my_query = """
