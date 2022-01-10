@@ -15,8 +15,9 @@ my_new_query = """
 SELECT * 
 FROM customers
 WHERE points BETWEEN 1000 AND 3000
-ORDER BY points DESC
+ORDER BY points DESC;
 """
+
 my_cursor = mydb.cursor()
 my_cursor.execute(my_query)
 my_result = my_cursor.fetchone()
