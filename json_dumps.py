@@ -1,7 +1,7 @@
 import json
 from pathlib import Path
 
-movies = [{"id": 1, "name": "Terminator", "year": 1984}, {"id": 2, "name": "Harry Potter", "year": 2000}]
+movies = [{"id": 1, "name": "Terminator", "year": 1984}, {"id": 2, "name": "Harry Potter", "year": 2001}]
 
 data = json.dumps(movies)  # Converts Python readable data to JSON file
 path = Path("movies.json")
