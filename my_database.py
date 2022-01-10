@@ -1,6 +1,8 @@
 from mysql.connector import connect
+import os
 
-mydb = connect(host="127.0.0.1", user="root", password="nitaI9093@", database="sql_store")
+db_password = os.getenv("DB_PWD")
+mydb = connect(host="127.0.0.1", user="root", password=db_password, database="sql_store")
 
 my_query = """
 SELECT * 
