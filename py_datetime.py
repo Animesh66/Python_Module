@@ -6,10 +6,10 @@ print(epic_time)
 print("No of Years: ", epic_time/31536000)
 dt2 = datetime.now()  # returns the current timestamp
 dt3 = datetime.today()
-dt4 = datetime.date(2018, 12, 11)
+# dt4 = datetime.date(2018, 12, 11)
 print("dt2 is: ", dt2)
 print("dt3 is: ", dt3)
-print("dt4 is: ", dt4)
+# print("dt4 is: ", dt4)
 print(dt2.strftime("%Y/%m/%d"))  # strftime method  converts date to string format
 dt1 = datetime.strptime("2018-12-31", "%Y-%m-%d") + timedelta(days=1)
 print(dt1)  # strptime method converts string to date format
