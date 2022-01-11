@@ -13,5 +13,7 @@ for row in range(2, rows +1):
         pprint(cell_value, width=50)
 
 sheet.insert_rows()
-sheet.insert_columns()
+sheet.insert_cols()
 sheet.append()
+sheet.delete_rows()
+sheet.delete_cols()
