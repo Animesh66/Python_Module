@@ -11,3 +11,7 @@ for row in range(2, rows +1):
     for column in range(1, columns + 1):
         cell_value = sheet.cell(row=row, column=column).value
         pprint(cell_value, width=50)
+
+sheet.insert_rows()
+sheet.insert_columns()
+sheet.append()
