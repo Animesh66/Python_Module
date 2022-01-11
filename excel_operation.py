@@ -12,8 +12,8 @@ for row in range(2, rows +1):
         cell_value = sheet.cell(row=row, column=column).value
         pprint(cell_value, width=50)
 
-sheet.insert_rows()
-sheet.insert_cols()
-sheet.append()
-sheet.delete_rows()
-sheet.delete_cols()
+# sheet.insert_rows()
+# sheet.insert_cols()
+# sheet.append()
+# sheet.delete_rows()
+# sheet.delete_cols()
