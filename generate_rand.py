@@ -10,5 +10,6 @@ print(random.choices(my_list, k=3))  # Randomly picks THREE(k) item from "my_lis
 print(random.choices(string.ascii_letters + string.digits + "@!_", k=10))
 generate_password = "".join(random.choices(string.ascii_letters + string.digits + "@!_", k=10))
 print(generate_password)
-print(random.shuffle(new_list))  # Randomly changes the element position
+random.shuffle(new_list) # Randomly changes the element position
+print(new_list)
 print("".join(['a','b','c','d','e','f']))
